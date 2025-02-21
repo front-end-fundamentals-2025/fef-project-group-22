@@ -202,6 +202,23 @@ body{
     bottom: 8px;
 }
 
+.shop-button{
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    left: 5rem;
+    bottom: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    background: black;
+    color: white;    
+}
+
+.shop-button:hover{
+    background: rgb(6, 94, 6);
+    color: black;
+}
+
 /* image slider animation */
 @keyframes slide {
     0% {
