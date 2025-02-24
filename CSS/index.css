@@ -17,7 +17,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  background-color: #ffffff;
+  background-image: url("CSS/trianglify-lowres.png"); /* Set your background image */
+  background-size: cover; /* Ensure the image covers the entire header */
+  background-position: center;
   margin-bottom: 0;
 }
 
