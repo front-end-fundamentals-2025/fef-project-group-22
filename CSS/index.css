@@ -178,25 +178,25 @@ nav a:hover {
 }
 
 .right-side {
-  width: 48%; /* Set the width to 50% to occupy the right half of the screen */
+  width: 48%;
   display: flex;
-  flex-direction: column; /* Arrange children in a column */
-  justify-content: space-between; /* Distribute space between children */
+  flex-direction: column;
+  justify-content: space-between;
   height: 50vh;
   margin-left: 2%;
 }
 
 .right-side .top-div {
-  height: 48%; /* Each div takes up half the height of the right-side container */
-  background: #b9b300; /* Placeholder background color */
-  border-radius: 0 2rem 0 0; /* Top-right corner rounded, bottom-right corner square */
-  margin-bottom: 4%; /* Add margin to create space between the two divs */
+  height: 48%;
+  background: #b9b300;
+  border-radius: 0 2rem 0 0;
+  margin-bottom: 4%;
 }
 
 .right-side .bottom-div {
-  height: 48%; /* Each div takes up half the height of the right-side container */
-  background: #b9b300; /* Placeholder background color */
-  border-radius: 0 0 2rem 0; /* Top-right corner square, bottom-right corner rounded */
+  height: 48%;
+  background: #b9b300;
+  border-radius: 0 0 2rem 0;
 }
 
 /* FOOTER */
@@ -248,8 +248,5 @@ footer {
 }
 
 .logo-footer {
-  font-size: 24px;
-  font-weight: bold;
-  color: #dcd36c;
-  text-align: center;
+  border-radius: 2rem;
 }
