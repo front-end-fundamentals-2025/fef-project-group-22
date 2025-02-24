@@ -17,17 +17,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  background: #fceabb; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #f8b500,
-    #fceabb
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #f8b500,
-    #fceabb
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fceabb;
+  background: -webkit-linear-gradient(to left, #f8b500, #fceabb);
+  background: linear-gradient(to left, #f8b500, #fceabb);
 
   margin-bottom: 0;
 }
@@ -70,14 +62,17 @@ nav a:hover {
 
 .slider-container {
   position: relative;
+  width: 50%; /* Set the width to 50% to occupy the left half of the screen */
+  float: left; /* Float to the left */
+  margin-right: 2%;
 }
 
 .wrapper {
-  width: 100%;
+  width: 100%; /* Ensure the wrapper takes up the full width of the container */
   height: 50vh;
   overflow: hidden;
   background: rgb(191, 141, 10);
-  border-radius: 2rem;
+  border-radius: 2rem 0 0 2rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.13);
 }
 
@@ -182,19 +177,33 @@ nav a:hover {
   font-weight: bold;
 }
 
+.right-side {
+  width: 48%; /* Set the width to 50% to occupy the right half of the screen */
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  justify-content: space-between; /* Distribute space between children */
+  height: 50vh;
+  margin-left: 2%;
+}
+
+.right-side .top-div {
+  height: 48%; /* Each div takes up half the height of the right-side container */
+  background: #b9b300; /* Placeholder background color */
+  border-radius: 0 2rem 0 0; /* Top-right corner rounded, bottom-right corner square */
+  margin-bottom: 4%; /* Add margin to create space between the two divs */
+}
+
+.right-side .bottom-div {
+  height: 48%; /* Each div takes up half the height of the right-side container */
+  background: #b9b300; /* Placeholder background color */
+  border-radius: 0 0 2rem 0; /* Top-right corner square, bottom-right corner rounded */
+}
+
 /* FOOTER */
 footer {
-  background: #eacda3; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #d6ae7b,
-    #eacda3
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #d6ae7b,
-    #eacda3
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fceabb;
+  background: -webkit-linear-gradient(to left, #f8b500, #fceabb);
+  background: linear-gradient(to left, #f8b500, #fceabb);
 
   color: #000000;
   padding: 20px;
