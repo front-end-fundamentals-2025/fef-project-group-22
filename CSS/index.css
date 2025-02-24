@@ -55,7 +55,6 @@ nav a {
 
 .slider-container {
   position: relative;
-  background: #254471;
   
 }
 
@@ -64,6 +63,8 @@ nav a {
   height: 50vh;
   overflow: hidden;
   background: #dcd36c;
+  border-radius: 2rem;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.8), 0 10px 20px 0 rgba(0, 0, 0, 0.9);
 }
 
 .wrapper-holder {
@@ -133,7 +134,7 @@ nav a {
 }
 
 .slide-button:hover {
-  background-color: #dcd36c;
+  background-color: #2ad110;
 }
 
 .shop-button {
