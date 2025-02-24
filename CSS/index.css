@@ -188,7 +188,7 @@ footer {
 }
 
 .brands img {
-  max-width: 100px;
+  max-width: fit-content;
   height: auto;
 }
 
