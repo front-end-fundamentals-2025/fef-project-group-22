@@ -17,20 +17,20 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
+  background-color: #F52549;
+  border-bottom: 1px solid #1d1b1b;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #dcd36c;
+  color: whitesmoke;
 }
 
 nav a {
   margin-right: 20px;
   text-decoration: none;
-  color: #333;
+  color: whitesmoke;
 }
 
 .search-bar input {
@@ -43,7 +43,7 @@ nav a {
 .user-actions a {
   margin-left: 20px;
   text-decoration: none;
-  color: #333;
+  color: whitesmoke;
 }
 
 /* MAIN */
