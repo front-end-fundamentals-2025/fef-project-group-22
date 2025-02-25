@@ -33,12 +33,14 @@ nav a {
   margin-right: 20px;
   text-decoration: none;
   color: rgb(0, 0, 0);
+  transition: transform 0.3s ease;
 }
 
 nav a:hover {
   color: rgb(191, 141, 10);
   text-decoration: underline;
   text-decoration-color: rgb(191, 141, 10);
+  transform: scale(1.2);
 }
 
 .search-bar {
@@ -80,8 +82,12 @@ nav a:hover {
   width: 20px;
   height: 20px;
   margin-left: 15px;
+  transition: transform 0.3s ease;
 }
 
+.user-actions a img:hover {
+  transform: scale(1.2);
+}
 /* MAIN */
 #main-body {
   width: 100%;
