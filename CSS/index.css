@@ -76,10 +76,10 @@ nav a:hover {
   background-color: rgb(253, 189, 71);
 }
 
-.user-actions a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+.user-actions a img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 /* MAIN */
