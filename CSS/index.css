@@ -118,29 +118,25 @@ nav a:hover {
   animation: slider 30s ease-in-out infinite alternate;
 }
 
-#slider-img-1 {
-  background-image: url("../Image/slide1.jpg");
+.slider-img {
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#slider-img-1 {
+  background-image: url("../Image/slide1.jpg");
 }
 #slider-img-2 {
   background-image: url("../Image/slide2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 #slider-img-3 {
   background-image: url("../Image/slide3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 #slider-img-4 {
   background-image: url("../Image/slide4.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 @keyframes slider {
