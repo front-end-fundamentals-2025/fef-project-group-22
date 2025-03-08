@@ -260,6 +260,7 @@ nav a:hover {
 }
 
 .product-section h2 {
+  text-align: left;
   margin-bottom: 20px;
   font-size: 24px;
   color: #333;
@@ -279,6 +280,16 @@ nav a:hover {
   padding: 20px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease-in-out;
 }
 
 .product-card img {
