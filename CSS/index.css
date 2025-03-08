@@ -254,7 +254,50 @@ nav a:hover {
   transform: scale(1.01);
   transition: transform 0.3s ease;
 }
+.product-section {
+  text-align: center;
+  padding: 40px 20px;
+}
 
+.product-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card .brand {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.product-card .productname {
+  font-size: 18px;
+  color: #333;
+  margin-top: 5px;
+}
 /* FOOTER */
 footer {
   background: #fceabb;
