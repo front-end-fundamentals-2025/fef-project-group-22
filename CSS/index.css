@@ -284,10 +284,14 @@ nav a:hover {
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .product-card:hover {
   transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 .product-card:active {
@@ -364,7 +368,6 @@ footer {
   border-radius: 2rem;
 }
 
-
 @media screen and (max-width: 1293px) {
   nav {
     position: absolute;
@@ -384,7 +387,7 @@ footer {
     padding: 10px;
     display: block;
   }
-  #main-body{
+  #main-body {
     padding-top: 85px;
   }
 }
@@ -397,7 +400,6 @@ footer {
   #main-body {
     height: auto;
   }
-
 }
 
 @media screen and (max-width: 850px) {
@@ -463,10 +465,9 @@ footer {
     padding: 0px;
     margin-right: 0px;
   }
-  #main-body{
+  #main-body {
     padding-top: 295px;
   }
-
 }
 
 @media screen and (max-width: 650px) {
@@ -481,7 +482,6 @@ footer {
     width: 420px;
     margin-left: -40px;
   }
-
 }
 
 @media screen and (max-width: 400px) {
