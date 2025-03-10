@@ -13,10 +13,7 @@ body {
 
 /* HEADER */
 header {
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,10 +23,6 @@ header {
   background: linear-gradient(to left, #f8b500, #fceabb);
   margin-bottom: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-body {
-  padding-top: 80px;
 }
 
 .logo img {
