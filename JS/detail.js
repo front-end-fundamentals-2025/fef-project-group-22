@@ -56,3 +56,24 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Item added to cart!");
   });
 });
+
+function addToCart() {
+  const productName = document.querySelector(".product-name").innerText;
+  const currentPrice = document.querySelector(".current-price").innerText;
+  const sizeOption = document.querySelector(".size-option.active").innerText;
+  const colorOption = document.querySelector(".color-option.active")
+    .classList[1];
+
+  const cartItem = {
+    name: productName,
+    price: currentPrice,
+    size: sizeOption,
+    color: colorOption,
+  };
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push(cartItem);
+  localStorage.setItem("cart", JSON.stringify(cart));
+
+  alert("Item added to cart!");
+}
