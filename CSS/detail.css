@@ -101,19 +101,22 @@ nav a:hover {
   max-width: 900px;
   margin: 20px auto;
   gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* 左侧：产品图片 */
 .product-images {
-  flex: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* 改为水平布局 */
   gap: 10px;
 }
 
-/* 缩略图样式 */
 .thumbnails {
   display: flex;
+  flex-direction: column; /* 改为垂直布局 */
   gap: 10px;
 }
 
@@ -123,19 +126,22 @@ nav a:hover {
   object-fit: cover;
   cursor: pointer;
   border: 2px solid transparent;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
 }
 
 .thumbnail.active {
-  border: 2px solid #000;
+  border-color: rgb(191, 141, 10);
 }
 
 .main-image img {
   width: 100%;
   max-width: 400px;
   height: auto;
+  border-radius: 10px;
 }
 
-/* RIGHT SIDE*/
+/* 右侧：产品详情 */
 .product-details {
   flex: 1;
   display: flex;
@@ -156,6 +162,7 @@ nav a:hover {
 .current-price {
   font-size: 20px;
   font-weight: bold;
+  color: rgb(191, 141, 10);
 }
 
 .original-price {
@@ -164,28 +171,26 @@ nav a:hover {
   text-decoration: line-through;
 }
 
-.size-selection {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.size-option {
+.size-option,
+.quantity-btn {
   padding: 5px 10px;
   border: 1px solid #ccc;
   background-color: #fff;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.size-option.active {
-  border-color: #000;
-  background-color: #f0f0f0;
+.size-option.active,
+.quantity-btn:hover {
+  background-color: rgb(191, 141, 10);
+  color: #fff;
 }
 
 .color-selection {
   display: flex;
-  gap: 10px;
   align-items: center;
+  gap: 10px;
 }
 
 .color-option {
@@ -194,67 +199,44 @@ nav a:hover {
   border-radius: 50%;
   cursor: pointer;
   border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.color-option.blue {
+  background-color: blue;
+}
+
+.color-option.black {
+  background-color: black;
+}
+
+.color-option.pink {
+  background-color: pink;
 }
 
 .color-option.active {
-  border-color: #000;
+  border-color: rgb(191, 141, 10);
 }
 
-.blue {
-  background-color: #4682b4;
-}
-
-.black {
-  background-color: #000000;
-}
-
-.pink {
-  background-color: #ffc1cc;
-}
-
-.quantity-selection {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.quantity-btn {
-  width: 25px;
-  height: 25px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.quantity {
-  font-size: 16px;
-}
-
-/* time */
 .sale-timer {
-  font-size: 14px;
-  color: #ff4500;
+  font-size: 16px;
+  color: red;
+  margin-bottom: 10px;
 }
 
-/* cart */
 .add-to-cart {
-  padding: 10px;
-  background-color: #000;
-  color: #fff;
+  padding: 10px 20px;
+  background-color: rgb(191, 141, 10);
   border: none;
+  border-radius: 5px;
+  color: #fff;
   cursor: pointer;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-/* res */
-@media (max-width: 600px) {
-  .product-info {
-    flex-direction: column;
-  }
-  .thumbnails {
-    flex-direction: row;
-    overflow-x: auto;
-  }
+.add-to-cart:hover {
+  background-color: rgb(253, 189, 71);
 }
 /* FOOTER */
 footer {
