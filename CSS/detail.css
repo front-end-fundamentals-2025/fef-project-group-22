@@ -96,6 +96,16 @@ nav a:hover {
 }
 
 /* MAIN */
+#main-body {
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  margin-top: 0;
+  background: #ffefba;
+  background: -webkit-linear-gradient(to bottom, #ffffff, #ffefba);
+  background: linear-gradient(to bottom, #ffffff, #ffefba);
+}
+
 .product-info {
   display: flex;
   max-width: 900px;
