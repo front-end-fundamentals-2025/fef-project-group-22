@@ -95,6 +95,167 @@ nav a:hover {
   transform: scale(1.2);
 }
 
+/* MAIN */
+.product-info {
+  display: flex;
+  max-width: 900px;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+/* 左侧：产品图片 */
+.product-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 缩略图样式 */
+.thumbnails {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail.active {
+  border: 2px solid #000;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* RIGHT SIDE*/
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+}
+
+.current-price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.original-price {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.size-selection {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.size-option {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.size-option.active {
+  border-color: #000;
+  background-color: #f0f0f0;
+}
+
+.color-selection {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.color-option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.color-option.active {
+  border-color: #000;
+}
+
+.blue {
+  background-color: #4682b4;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.pink {
+  background-color: #ffc1cc;
+}
+
+.quantity-selection {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.quantity-btn {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.quantity {
+  font-size: 16px;
+}
+
+/* time */
+.sale-timer {
+  font-size: 14px;
+  color: #ff4500;
+}
+
+/* cart */
+.add-to-cart {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* res */
+@media (max-width: 600px) {
+  .product-info {
+    flex-direction: column;
+  }
+  .thumbnails {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+}
 /* FOOTER */
 footer {
   background: #fceabb;
