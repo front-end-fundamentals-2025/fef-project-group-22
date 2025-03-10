@@ -117,16 +117,15 @@ nav a:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 左侧：产品图片 */
 .product-images {
   display: flex;
-  flex-direction: row; /* 改为水平布局 */
+  flex-direction: row;
   gap: 10px;
 }
 
 .thumbnails {
   display: flex;
-  flex-direction: column; /* 改为垂直布局 */
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -151,7 +150,6 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* 右侧：产品详情 */
 .product-details {
   flex: 1;
   display: flex;
