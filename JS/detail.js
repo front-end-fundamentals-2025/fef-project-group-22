@@ -59,6 +59,7 @@ if (buttonElement) {
   buttonElement.addEventListener("click", function () {
     let text = productElement.textContent; // Get product name
     let price = priceElement.textContent;
+    let photo = picElement.src; // Get image source
     localStorage.setItem("priceItem",price);
     localStorage.setItem("cartItem", text); // Save to local storage
     localStorage.setItem("cartImage", photo); // Store image URL in local storage
