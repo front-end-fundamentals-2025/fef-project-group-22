@@ -222,15 +222,15 @@ nav a:hover {
   transition: border-color 0.3s ease;
 }
 
-.color-option.blue {
-  background-color: rgb(255, 255, 255);
+.color-option.white {
+  background-color: rgb(176, 176, 176);
 }
 
 .color-option.black {
   background-color: black;
 }
 
-.color-option.pink {
+.color-option.purple {
   background-color: rgb(251, 0, 255);
 }
 
