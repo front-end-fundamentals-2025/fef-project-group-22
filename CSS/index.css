@@ -13,10 +13,7 @@ body {
 
 /* HEADER */
 header {
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,10 +35,6 @@ header {
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-body {
-  padding-top: 80px;
 }
 
 .logo img {
