@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const productElement = document.getElementById("product-cart");
 const buttonElement = document.getElementById("add-cart");
 const priceElement = document.getElementById("item-price");
+const picElement = document.getElementById("image-iphone");
 
 if (buttonElement) {
   buttonElement.addEventListener("click", function () {
@@ -60,6 +61,7 @@ if (buttonElement) {
     let price = priceElement.textContent;
     localStorage.setItem("priceItem",price);
     localStorage.setItem("cartItem", text); // Save to local storage
+    localStorage.setItem("cartImage", photo); // Store image URL in local storage
     window.location.href = "cart.html"; // Redirect to cart page
   });
 }

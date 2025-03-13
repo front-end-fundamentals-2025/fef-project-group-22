@@ -12,16 +12,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitElement = document.getElementById("checkout");
     const messageElement = document.getElementById("message");
     const displayElement = document.getElementById("display-div");
+    const savedImage = localStorage.getItem("cartImage"); // Retrieve saved image
+    const imgElement = document.querySelector(".shopped-image img"); // Select the <img> tag
   
     // Display saved product in the cart
-    if (shoppingElement && savedProduct && savedPrice) {
+    if (shoppingElement && savedProduct && savedPrice && savedImage) {
       shoppingElement.textContent = savedProduct;
       costElement.textContent = savedPrice;
+      imgElement.src = savedImage; // Set the image source
+      imgElement.alt = savedProduct; // Set alt text
       shoppingElement.style.color = "#0000ff"; // Change text color
-      shoppingElement.style.fontSize = "20px"; // Increase text size
+      shoppingElement.style.fontSize = "18px"; // Increase text size
       shoppingElement.style.fontWeight = "bold"; // Make text bold
       costElement.style.color = "#ff00ff"; // Change text color
-      costElement.style.fontSize = "20px"; // Increase text size
+      costElement.style.fontSize = "18px"; // Increase text size
       costElement.style.fontWeight = "bold"; // Make text bold
         
     } else {
@@ -33,8 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
       deleteElement.addEventListener("click", function () {
         localStorage.removeItem("cartItem"); // Remove from localStorage
         localStorage.removeItem("priceItem");
+        localStorage.removeItem("cartImage");
         shoppingElement.textContent = "Item has been removed"; // Reset cart display
         costElement.textContent="";
+        imgElement.src = ""; // Remove image
+        imgElement.alt = ""; // Remove alt text
   
       });
     }
@@ -52,12 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
       let cvvnum = cvvElement.value;
   
       // Step 1: Check if a product is in the cart
-      if (!savedProduct || !savedPrice || shoppingElement.textContent !== savedProduct || costElement.textContent !== savedPrice) {
+      if (!savedProduct && !savedPrice && !savedImage) {
         messageElement.innerHTML = "Go to product page and add items to cart";
         displayElement.style.backgroundColor = "#F43D0D";
         return; // Stop execution
       }
-  
+      
       // Step 2: First prompt to enter card details
       if (!nam && !card && !monnum && !cvvnum) {
         messageElement.innerHTML = "Please enter your card details";
