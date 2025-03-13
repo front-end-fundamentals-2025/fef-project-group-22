@@ -315,7 +315,6 @@ nav a:hover {
 .product-card .brand {
   font-size: 14px;
   color: #888;
-  margin-top: 10px;
 }
 
 .product-card .productname {
@@ -397,6 +396,10 @@ footer {
   #main-body {
     padding-top: 85px;
   }
+  .product-card .productname{
+    font-size: 15px;
+    margin-top: -2px;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -406,6 +409,14 @@ footer {
   }
   #main-body {
     height: auto;
+  }
+  .product-card .brand {
+    font-size: 11px;
+  }
+
+  .product-card .productname{
+    font-size: 12px;
+    margin-top: -3px;
   }
 }
 
@@ -488,6 +499,14 @@ footer {
   nav {
     width: 420px;
     margin-left: -40px;
+  }
+  .product-card .brand {
+    font-size: 14px;
+  }
+
+  .product-card .productname{
+    font-size: 16px;
+    margin-top: -3px;
   }
 }
 
