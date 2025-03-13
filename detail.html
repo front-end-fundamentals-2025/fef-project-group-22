@@ -6,7 +6,6 @@
     <title>ElectroHive</title>
     <link rel="icon" href="bitbug_favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="CSS/detail.css" />
-    <script src="JS/detail.js"></script>
   </head>
   <body>
     <header>
@@ -54,9 +53,9 @@
           </div>
         </div>
         <div class="product-details">
-          <h1 class="product-name">IPhone 16Pro MAX</h1>
+          <h1 id="product-cart" class="product-name">IPhone 16Pro MAX</h1>
           <div class="price">
-            <span class="current-price">90,00.00KR</span>
+            <span id="item-price" class="current-price">90,00.00KR</span>
             <span class="original-price">100,00.00KR</span>
           </div>
           <div class="size-selection">
@@ -74,7 +73,7 @@
           <p class="sale-timer">
             HURRY UP! Sale ends in: <span class="timer">00 : 05 : 59</span>
           </p>
-          <button class="add-to-cart">ADD TO CART</button>
+          <button id="add-cart" class="add-to-cart">ADD TO CART</button>
         </div>
       </div>
     </main>
@@ -123,5 +122,6 @@
         </div>
       </div>
     </footer>
+    <script src="JS/detail.js" defer></script>
   </body>
 </html>

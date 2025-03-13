@@ -49,27 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
   updateTimer();
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const addToCartButton = document.querySelector(".add-to-cart");
 
-  addToCartButton.addEventListener("click", function () {
-    const productName = document.querySelector(".product-name").innerText;
-    const currentPrice = document.querySelector(".current-price").innerText;
-    const sizeOption = document.querySelector(".size-option.active").innerText;
-    const colorOption = document.querySelector(".color-option.active")
-      .classList[1];
+const productElement = document.getElementById("product-cart");
+const buttonElement = document.getElementById("add-cart");
+const priceElement = document.getElementById("item-price");
 
-    const cartItem = {
-      name: productName,
-      price: currentPrice,
-      size: sizeOption,
-      color: colorOption,
-    };
-
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push(cartItem);
-    localStorage.setItem("cart", JSON.stringify(cart));
-
-    alert("Item added to cart!");
+if (buttonElement) {
+  buttonElement.addEventListener("click", function () {
+    let text = productElement.textContent; // Get product name
+    let price = priceElement.textContent;
+    localStorage.setItem("priceItem",price);
+    localStorage.setItem("cartItem", text); // Save to local storage
+    window.location.href = "cart.html"; // Redirect to cart page
   });
-});
+}

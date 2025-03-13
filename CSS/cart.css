@@ -99,18 +99,28 @@ nav a:hover {
 #main-body {
   width: 100%;
   height: 45rem;
-  padding: 10px 20px;
   margin-top: 0;
   background: #ffefba;
   background: -webkit-linear-gradient(to bottom, #ffffff, #ffefba);
   background: linear-gradient(to bottom, #ffffff, #ffefba);
 }
 
+#display-div{
+  width: 100%;
+  height: 50px;
+}
+
+#display-div h1{
+  text-align: center;
+  padding-top: 10px;
+  color:white;
+}
+
 .main-division {
   width: 98%;
   height: 35rem;
   gap: 20px;
-  margin: 5rem auto;
+  margin: 1rem auto;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;

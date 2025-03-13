@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ElectroHive</title>
     <link rel="icon" href="bitbug_favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="CSS/cart.css" />
-    <script src="JS/index.js"></script>
+    <link rel="stylesheet" href="CSS/cart.css"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -46,6 +45,9 @@
     </header>
 
     <main id="main-body">
+      <div id="display-div">
+        <h1 id="message"></h1>
+      </div>
       <div class="main-division">
         <div class="left-division">
           <div class="left-head">
@@ -57,18 +59,16 @@
           </div>
           <div class="shopping-main">
             <div class="shopped-items">
-              <h5>Shopping item</h5>
-              <input type="number" />
+              <h5 id="shopping">SHOPPED ITEMS</h5>
+              <h5 id="cost"></h5>
+              <button id="delete" class="btn"><i class="fa fa-trash"></i></button>
+            </div>
+            <div class="shopped-items">
+              <h5>SHOPPED ITEMS</h5>
               <button class="btn"><i class="fa fa-trash"></i></button>
             </div>
             <div class="shopped-items">
-              <h5>Shopping item</h5>
-              <input type="number" />
-              <button class="btn"><i class="fa fa-trash"></i></button>
-            </div>
-            <div class="shopped-items">
-              <h5>Shopping item</h5>
-              <input type="number" />
+              <h5>SHOPPED ITEMS</h5>
               <button class="btn"><i class="fa fa-trash"></i></button>
             </div>
           </div>
@@ -87,20 +87,20 @@
             <div class="form-division">
               <form>
                 <label>Name on the card</label>
-                <input type="text" placeholder="Full Name" />
+                <input id="full-name" type="text" placeholder="Full Name" />
                 <label>Card Number</label>
-                <input type="number" placeholder="Card Number" />
+                <input id="card-number" type="number" placeholder="Card Number" />
                 <div class="expiration-cvv">
                   <div>
                     <label>Expiration Date</label>
-                    <input type="text" placeholder="MM/YY" />
+                    <input id="month-year" type="text" placeholder="MM/YY" />
                   </div>
                   <div>
                     <label>Expiration Date</label>
-                    <input type="number" placeholder="cvv" />
+                    <input id="cvv-number" type="number" placeholder="cvv" />
                   </div>
                 </div>
-                <button type="submit">Checkout</button>
+                <button id="checkout" type="submit">Checkout</button>
               </form>
             </div>
           </div>
@@ -150,6 +150,6 @@
         </div>
       </div>
     </footer>
-    <script src="JS/index.js"></script>
+    <script src="JS/cart.js" defer></script>
   </body>
 </html>
