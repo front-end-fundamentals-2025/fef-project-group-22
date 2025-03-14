@@ -25,12 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
     imgElement.src = savedImage; // Set the image source
     imgElement.alt = savedProduct; // Set alt text
     shoppingElement.style.color = "#0000ff"; // Change text color
-    shoppingElement.style.fontSize = "18px"; // Increase text size
     shoppingElement.style.fontWeight = "bold"; // Make text bold
     costElement.style.color = "#ff00ff"; // Change text color
-    costElement.style.fontSize = "18px"; // Increase text size
     costElement.style.fontWeight = "bold"; // Make text bold
-    imgElement.style.borderRadius = "10px";
+    imgElement.style.borderRadius = "5px";
       
   } else {
     console.warn("Shopping cart item not found or cart is empty.");

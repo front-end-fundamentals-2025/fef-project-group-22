@@ -132,7 +132,7 @@ nav a:hover {
   width: 98%;
   height: 35rem;
   gap: 20px;
-  margin: 2.5rem auto;
+  margin: 0.5rem auto;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -213,6 +213,10 @@ h1 {
 
 .shopped-items:hover {
   transform: scale(1.02);
+}
+
+.shopped-items h5{
+  font-size: 18px;
 }
 
 .btn {
@@ -371,6 +375,12 @@ footer {
     padding: 10px;
     display: block;
   }
+
+  #display-div{
+    margin-top: 82px;
+  }
+
+
 }
 
 @media screen and (max-width: 1050px) {
@@ -441,7 +451,7 @@ footer {
   .user-actions {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 18px;
   }
 
   .user-actions a img {
@@ -469,7 +479,6 @@ footer {
 
   .main-division {
     width: 100%;
-    margin-top: 190px;
   }
 
   .left-head {
@@ -496,6 +505,11 @@ footer {
     padding-bottom: 2px;
     display: inline-block;
   }
+
+  #display-div{
+    margin-top: 220px;
+  }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -541,11 +555,6 @@ footer {
     padding-top: 200px;
   }
 
-  .shopped-items h5{
-    font-size: 12px;
-  }
- 
-
   .shopping-main {
     width: 53%;
     margin-left: 114px;
@@ -554,4 +563,13 @@ footer {
   .right-division {
     width: 31rem;
   }
+
+  #display-div{
+    margin-top: 235px;
+  }
+
+  .shopped-items h5{
+    font-size: 13px;
+  }
+
 }
