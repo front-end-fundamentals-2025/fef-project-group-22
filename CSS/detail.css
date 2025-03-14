@@ -6,6 +6,11 @@
   font-family: Arial, sans-serif;
 }
 
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%; /* Ensure the body doesn't extend beyond the viewport */
+}
+
 body {
   line-height: 1.6;
   background-color: #ffffff;
@@ -13,10 +18,7 @@ body {
 
 /* HEADER */
 header {
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,10 +40,6 @@ header {
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-body {
-  padding-top: 80px;
 }
 
 .logo img {
@@ -396,7 +394,7 @@ footer {
   nav {
     flex-direction: column;
     width: 550px;
-    height: 270px;
+    height: 215px;
     padding: 10px;
     justify-content: space-between;
     margin-left: -35px;
@@ -408,7 +406,7 @@ footer {
     margin-right: 0px;
   }
   #main-body {
-    padding-top: 295px;
+    padding-top: 220px;
   }
 }
 
@@ -427,8 +425,25 @@ footer {
 }
 
 @media screen and (max-width: 400px) {
-  nav {
-    width: 332px;
-    margin-left: -35px;
+
+  header{
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+
   }
+ nav {
+    position: fixed;
+    overflow-x: hidden;
+    width: 360px;
+    margin-left: -50px;
+
+  }
+
+  #main-body {
+    padding-top: 420px;
+  }
+
+
 }
+
