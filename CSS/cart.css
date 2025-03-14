@@ -475,10 +475,12 @@ footer {
 
   #main-body {
     height: auto;
+    margin-top: 220px;
   }
 
   .main-division {
     width: 100%;
+    
   }
 
   .left-head {
@@ -507,7 +509,7 @@ footer {
   }
 
   #display-div{
-    margin-top: 220px;
+    margin-top: 5px;
   }
 
 }
@@ -521,8 +523,8 @@ footer {
 
 @media screen and (max-width: 510px) {
   nav {
-    width: 420px;
-    margin-left: -40px;
+    width: 470px;
+    margin-left: -65px;
   }
 
   .shopping-main {
@@ -548,11 +550,19 @@ footer {
     overflow-x: hidden;
     width: 360px;
     margin-left: -48px;
+    z-index: 1;
 
   }
 
+  #display-div{
+    border-radius: 25px;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+
   #main-body {
-    padding-top: 200px;
+    padding-top: 210px;
   }
 
   .shopping-main {
@@ -564,12 +574,10 @@ footer {
     width: 31rem;
   }
 
-  #display-div{
-    margin-top: 235px;
-  }
-
   .shopped-items h5{
     font-size: 13px;
   }
+
+
 
 }
