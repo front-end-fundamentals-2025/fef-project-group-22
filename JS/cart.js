@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let cvvnum = cvvElement.value;
 
     // Step 1: Check if a product is in the cart
-    if (!savedProduct && !savedPrice && !savedImage) {
+    if (!savedProduct || !savedPrice || !savedImage || !shoppingElement || ! costElement || ! imgElement) {
       messageElement.innerHTML = "Go to product page and add items to cart";
       displayElement.style.backgroundColor = "#F43D0D";
       return; // Stop execution
